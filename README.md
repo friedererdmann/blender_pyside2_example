@@ -12,14 +12,14 @@ Put the whole setup into Blender\addons\blender_pyside2_example or your custom s
 Whole setup as Addon - in a production put the core.py into modules rather than one specific addon?
 Panel in View_3D with Button to launch QT window
 
-## Inner workings
+### Inner workings
 The main content here is the QtWindowEventLoop in core.py, which inherits the Blender operator and sets up modal execution with a QEventLoop that is triggered at 120Hz by Blender.
 
 The actual tool is the CamControllerWindow, which is inheriting the Ui_Form (UI from designer, simplified here) and QDialog
 
 The actual Blender UI element is CamControllerQtPanel (a regular bpy panel), containing the CustomWindowOperator as a UI button. The CustomWindowOperator is a QtWindowEventLoop Operator. It launches the eventloop and the (Qt) CamControllerWindow.
 
-## File structure
+### File structure
     Blender/Addons/Camtools/ (in the video, here: Blender_Pyside2_Example)
         __init__.py
             register and unregister are in here (Blender defaults)
@@ -36,7 +36,7 @@ The actual Blender UI element is CamControllerQtPanel (a regular bpy panel), con
             pyvenv.cfg
         
 
-## How to install PySide2 into Blender
+### How to install PySide2 into Blender
     Install Python 3.7 64 bit on system if not done yet
         https://www.python.org/downloads/release/python-370/
     Grab PySide2 via pip in your local Python 3.7 installation
