@@ -5,6 +5,9 @@ https://www.youtube.com/watch?v=QYgHyi7jd9c
 ## What is this?
 To better understand the video this is a simplified code example that is aligned with the video of Rajiv Sharma. The Qt tool can now only create new cameras and switch to existing cameras. Everything else is identical to the video (plus some fixes to get Blender to actually load it).
 
+## How to run this?
+Put the whole setup into Blender\addons\blender_pyside2_example or your custom scripts/addons path.
+
 ## Notes QT VFX Pipeline video
 Whole setup as Addon - in a production put the core.py into modules rather than one specific addon?
 Panel in View_3D with Button to launch QT window
