@@ -17,21 +17,21 @@ The actual tool is the CamControllerWindow, which is inheriting the Ui_Form (UI 
 The actual Blender UI element is CamControllerQtPanel (a regular bpy panel), containing the CustomWindowOperator as a UI button. The CustomWindowOperator is a QtWindowEventLoop Operator. It launches the eventloop and the (Qt) CamControllerWindow.
 
 ## File structure
-Blender/Addons/Camtools/ (in the video, here: Blender_Pyside2_Example)
-    __init__.py
-        register and unregister are in here (Blender defaults)
-    core.py
-        QtEventLoop (this is the most important part)
-    gui/
-        main.py (Originally this was a Designer UI, now just a simple replacement)
-        camController.py (actual Blender Addon code and Qt Window)
-    venv/ (in the video, not here)
-        Lib/
-            site-packages/
-                PySide2
-                shiboken2
-        pyvenv.cfg
-    
+    Blender/Addons/Camtools/ (in the video, here: Blender_Pyside2_Example)
+        __init__.py
+            register and unregister are in here (Blender defaults)
+        core.py
+            QtEventLoop (this is the most important part)
+        gui/
+            main.py (Originally this was a Designer UI, now just a simple replacement)
+            camController.py (actual Blender Addon code and Qt Window)
+        venv/ (in the video, not here)
+            Lib/
+                site-packages/
+                    PySide2
+                    shiboken2
+            pyvenv.cfg
+        
 
 ## How to install PySide2 into Blender
     Install Python 3.7 64 bit on system if not done yet
