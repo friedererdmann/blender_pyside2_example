@@ -1,3 +1,5 @@
+> You should also check out the bqt repository, for a more complete implementation of Qt with Blender. https://github.com/techartorg/bqt
+
 # blender_pyside2_example
 Example to run Qt/PySide2 applications in Blender, based on Rajiv Sharma's VFX Pipeline video:
 https://www.youtube.com/watch?v=QYgHyi7jd9c
