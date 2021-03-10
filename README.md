@@ -68,3 +68,5 @@ The only Blender UI element is CamControllerQtPanel (a regular bpy panel), conta
 
 ## Special credit
 __Rajiv Sharma__ did all the difficult work on this, and graciously shared his knowledge in his VFX Pipeline video (see link at the top of this document). This repository is just to help show how the implementation is done and contains only minor fixes.
+
+The video in turn is probably based on Vincent Gires work here: https://github.com/vincentgires/blender-scripts/tree/master/scripts/addons/qtutils
